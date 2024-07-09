@@ -177,13 +177,15 @@ class NotificationRepository with ChangeNotifier {
     print('Handling notification click with payload: $payload');
 
     if (payload != null) {
-      // Parse the payload as needed
-      // final Map<String, dynamic> data = jsonDecode(payload);
-      // print('Parsed Payload: $data');
-
-      // Implement navigation or handling logic based on the data
-      // Example:
-
+      if(payload=="SERVICE"){
+        // Navigator.of(context).pushNamed('/serviceScreen', arguments: data);
+      }if(payload=="Activity"){
+        // Navigator.of(context).pushNamed('/activityScreen', arguments: data);
+      }
+      if(payload=="SERVICE"){
+        // Navigator.of(context).pushNamed('/serviceScreen', arguments: data);
+      }
+      
       // Navigator.of(context).pushNamed('/specificScreen', arguments: data);
     } else {
       print('No payload data received.');
