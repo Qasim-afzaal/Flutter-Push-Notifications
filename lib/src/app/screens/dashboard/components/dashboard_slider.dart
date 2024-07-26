@@ -4,12 +4,12 @@ import 'package:watch_it/watch_it.dart';
 
 class DashBoardImageCarousel extends StatefulWidget
     with WatchItStatefulWidgetMixin {
-  final List<String> images; // Add a parameter for the list of images
+  final List<String> images; 
 
   DashBoardImageCarousel({
     required this.images,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   _DashBoardImageCarouselState createState() => _DashBoardImageCarouselState();
