@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class DashboardSection extends StatelessWidget {
   const DashboardSection({
-    Key? key,
+    super.key,
     required this.child,
     required this.title,
     this.backgroundColor = Colors.transparent,
-  }) : super(key: key);
+  });
 
   final Widget child;
   final String title;
