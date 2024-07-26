@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LikedIcon extends StatelessWidget {
-  const LikedIcon({Key? key}) : super(key: key);
+  const LikedIcon({super.key});
 
   @override
   Widget build(BuildContext context) {
