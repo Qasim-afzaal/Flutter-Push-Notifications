@@ -17,13 +17,12 @@ class ShimmerDashBoardWidget extends StatelessWidget {
           children: List.generate(
             3,
             (index) => SizedBox(
-              width: 250, // Adjust the width as needed
+              width: 250,
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(15, 20, 15, 10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // User details row
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -56,24 +55,18 @@ class ShimmerDashBoardWidget extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 9),
-
-                    // Image Carousel
                     Container(
                       width: double.infinity,
-                      height: 140, // Adjust the height as needed
+                      height: 140,
                       color: Colors.grey[200],
                     ),
                     const SizedBox(height: 10),
-
-                    // Price Row
                     Container(
                       width: double.infinity,
                       height: 16,
                       color: Colors.grey[200],
                     ),
                     const SizedBox(height: 10),
-
-                    // Bed, Bath, Sqft
                     Row(
                       children: [
                         Container(
@@ -115,8 +108,6 @@ class ShimmerDashBoardWidget extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 10),
-
-                    // Address
                     Container(
                       margin: const EdgeInsets.only(right: 5),
                       width: double.infinity,
@@ -124,8 +115,6 @@ class ShimmerDashBoardWidget extends StatelessWidget {
                       color: Colors.grey[200],
                     ),
                     const SizedBox(height: 10),
-
-                    // Like Status
                     Row(
                       children: [
                         Image.asset(
